@@ -3,6 +3,8 @@
   "api_host": "127.0.0.1",
   "health_interval": 30,
   "git_check_interval": 60,
+  "frontend_path": "/home/dominic/Documents/WebBartosz",
+  "frontend_git": "git@github.com:voicenotesite/WebBartosz.git",
   "backends": {
     "url-shortener": {
       "name": "URL Shortener",
@@ -22,11 +24,11 @@
     },
     "chat-proxy": {
       "name": "AI Chat Proxy",
-      "path": "/home/dominic/Documents/chat-proxy",
+      "path": "/home/dominic/Documents/ai-chat-proxy",
       "port": 8003,
       "git": null,
-      "type": "stub",
-      "entry": null
+      "type": "fastapi",
+      "entry": "app.main:app"
     },
     "task-queue": {
       "name": "Async Task Queue",

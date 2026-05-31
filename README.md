@@ -1,6 +1,6 @@
 # Portfolio Manager
 
-**Daemon + GUI do zarządzania 5 projektami Python portfolio.**
+**Daemon + GUI do zarządzania 5 backendami portfolio.**
 
 ⬇️ [Pobierz PortfolioManager (Linux)](https://github.com/voicenotesite/PortfolioManager/raw/main/dist/PortfolioManager)
 
@@ -9,6 +9,8 @@ chmod +x PortfolioManager && ./PortfolioManager
 ```
 
 Windows/macOS: `python3 gui/manager.py` lub zbuduj PyInstallerem.
+
+> ⚠️ **Portfolio Manager** zastąpił starsze `portfolio-daemon`. Wszystkie funkcje zostały przeniesione – nowsza wersja ma auto-venv, binarkę PyInstaller i lepsze wsparcie dla tuneli Cloudflare.
 
 ---
 
@@ -75,7 +77,7 @@ chmod +x dist/PortfolioManager && ./dist/PortfolioManager
 |---------|------|--------|
 | URL Shortener | 8000 | ✅ Gotowy |
 | GraphQL Blog | 8001 | ✅ Gotowy |
-| AI Chat Proxy | 8003 | 🔜 W implementacji |
+| AI Chat Proxy | 8003 | ✅ Gotowy |
 | Async Task Queue | 8004 | 🔜 W implementacji |
 | RAG PDF Q&A | 8005 | 🔜 W implementacji |
 

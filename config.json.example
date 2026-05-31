@@ -1,0 +1,50 @@
+{
+  "api_port": 19876,
+  "api_host": "127.0.0.1",
+  "health_interval": 30,
+  "git_check_interval": 60,
+  "frontend_path": "/path/to/your/frontend",
+  "frontend_git": "git@github.com:youruser/your-frontend.git",
+  "backends": {
+    "url-shortener": {
+      "name": "URL Shortener",
+      "path": "/path/to/url-shortener",
+      "port": 8000,
+      "git": "git@github.com:youruser/url-shortener.git",
+      "type": "fastapi",
+      "entry": "app.main:app"
+    },
+    "graphql-blog": {
+      "name": "GraphQL Blog",
+      "path": "/path/to/graphql-blog",
+      "port": 8001,
+      "git": "git@github.com:youruser/graphql-blog.git",
+      "type": "fastapi",
+      "entry": "app.main:app"
+    },
+    "chat-proxy": {
+      "name": "AI Chat Proxy",
+      "path": "/path/to/chat-proxy",
+      "port": 8003,
+      "git": null,
+      "type": "stub",
+      "entry": null
+    },
+    "task-queue": {
+      "name": "Async Task Queue",
+      "path": "/path/to/task-queue",
+      "port": 8004,
+      "git": null,
+      "type": "stub",
+      "entry": null
+    },
+    "rag-qa": {
+      "name": "RAG PDF Q&A",
+      "path": "/path/to/rag-qa",
+      "port": 8005,
+      "git": null,
+      "type": "stub",
+      "entry": null
+    }
+  }
+}
